@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+    <div class="registro" id="registro">
+               <div class="container">
+                    <div class="d-flex justify-content-center h-100">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Sign In</h3>
+                                <div class="d-flex justify-content-end social_icon">
+                                    <span><i class="fab fa-facebook-square"></i></span>
+                                    <span><i class="fab fa-google-plus-square"></i></span>
+                                    <span><i class="fab fa-twitter-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form name=form>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                        </div>
+                                        <input type="text" name=usuario class="form-control" placeholder="username">
+                                        
+                                    </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                        </div>
+                                        <input type="password" name=password class="form-control" placeholder="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <input onclick=login() type="button" value="Login" class="btn float-right login_btn">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </div>
+
+    <div class="reserva" id="reserva">
+        <div class="container">
+            <div class="d-flex justify-content-center h-100">
+                <div class="pista" id="p1">
+                    <div class="imagen">
+                        <img class="imagen_pista" src="imagenes/pista-padel.jpg">
+                    </div>
+                    <div class="horario">
+                        <h1>Hora</h>
+                        <p>17:00-18:30</p><img class="ocupacion" id="0" src="imagenes/libre.png" onclick=reserva_usuario(this)>
+                        <div class="admin">
+                            <button id="L0" onclick=libera_pista(this)>Liberar Pista</button>
+                            <button id="M0" onclick=mantenimiento_pista(this)>Manteniento</button>
+                        </div>
+                        <p>18:30-20:00</p><img class="ocupacion" id="1" src="imagenes/libre.png"onclick=reserva_usuario(this)>
+                        <div class="admin">
+                            <button id="L1" onclick=libera_pista(this)>Liberar Pista</button>
+                            <button id="M1" onclick=mantenimiento_pista(this)>Manteniento</button>
+                        </div>
+                        <p>20:00-21:30</p><img class="ocupacion" id="2" src="imagenes/libre.png"onclick=reserva_usuario(this)>
+                        <div class="admin">
+                            <button id="L2" onclick=libera_pista(this)>Liberar Pista</button>
+                            <button id="M2" onclick=mantenimiento_pista(this)>Manteniento</button>
+                        </div>
+                        <p>21:30-23:00</p><img class="ocupacion" id="3" src="imagenes/libre.png"onclick=reserva_usuario(this)>
+                        <div class="admin">
+                            <button id="L3" onclick=libera_pista(this)>Liberar Pista</button>
+                            <button id="M3" onclick=mantenimiento_pista(this)>Manteniento</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center h-100">
+                    <FORM class="form2" name=form2>
+                            <INPUT onclick=cerrar_sesion() type=button value="Cerrar Sesion" class="btn float-right login_btn">
+                    </FORM> 
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

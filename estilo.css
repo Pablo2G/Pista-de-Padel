@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-image: url('imagenes/fondo1.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 270px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 140px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+
+.registro{
+    width: 80%;
+    max-width: 400em;
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reserva{
+    width: 80%;
+    max-width: 400em;
+    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pista{
+    background-color: lightgreen;
+    width: 49%;
+    max-width: 200em;
+    border: solid 2px green;
+    padding: 1%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1188px) {
+    .pista{
+        background-color: lightgreen;
+        width: 80%;
+        max-width: 200em;
+        border: solid 2px green;
+        padding: 1%;
+        overflow: hidden;
+    }
+}
+
+.form2{
+    margin: 1%;
+}
+
+.imagen{
+    float: left;
+    width: 50%;
+}
+
+.imagen img{
+    text-align: center;
+    max-width: 100%;
+    max-height: 400px;
+}
+.horario{
+    float: right;
+    width: 50%;
+}
+
+.horario p{
+    margin: 0px;
+    font-size: 15px;
+}
+
+.horario img{
+    max-width: 20px;
+}
+
+.admin{
+    float: right;
+    font-size: small;
+}
+
+.btn_csesion{
+    clear: both;
+    margin: auto;
+}
